@@ -1,0 +1,34 @@
+{
+  "name": "Server",
+  "version": "1.0.0",
+  "description": "A RESTful NodeJS microservice",
+  "main": "app/server.js",
+  "scripts": {
+    "setup": "mongo react_redux_example_db --eval \"db.dropDatabase()\"",
+    "test": "mocha test/**/*.js",
+    "start": "npm run setup && NODE_ENV=development node app/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://test.com"
+  },
+  "author": "Test",
+  "license": "MIT",
+  "homepage": "https://test.com",
+  "bugs": {
+    "url": "https://test.com"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "proxyquire": "^1.7.11",
+    "sinon": "^2.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "jsonwebtoken": "^7.3.0",
+    "mongoose": "^4.9.2",
+    "morgan": "^1.8.1"
+  }
+}
